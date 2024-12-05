@@ -19,3 +19,117 @@ img {
     padding: 5px 80px;
     background: #83E85A;
 }
+
+.rightSide a {
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 250ms;
+    position: relative;
+    font-weight: 1000;
+    z-index: 1;
+}
+
+.rightSide a:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(16, 122, 139, 0.5);
+    transition: all 250ms;
+}
+
+.rightSide a:hover:before {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .leftSide img {
+        width: 50px;
+        height: 50px;
+        margin-left: 16px;
+    }
+
+    .rightSide a {
+        margin-right: 4px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .leftSide img {
+        width: 50px;
+        height: 50px;
+        margin-left: 16px;
+    }
+
+    .rightSide a {
+        margin-right: 4px;
+        font-size: 13px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 5px;
+    }
+}
+
+/* Home Css Başlangıç */
+.home {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContainer {
+    width: auto;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+.headerContainer h1 {
+    font-size: 90px;
+    height: 60px;
+    font-weight: 50;
+    color: white;
+}
+
+.headerContainer p {
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.headerContainer button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
